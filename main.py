@@ -8,4 +8,17 @@
 
 import os
 
-print(os.listdir())
+# print(os.listdir())
+# # print(os.getcwd())
+# os.chdir('C:\\Users')
+# print(os.getcwd()
+
+import os
+
+a = input("Enter the number: ")
+
+s = int(a)
+print("The sum of a and a is: ", s+s)
+
+print(type(s))
+print(type(a))
