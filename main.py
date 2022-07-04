@@ -99,10 +99,60 @@ but the end index is not included in the output'''
 # doubleSpace = a.replace("  "," ")
 # print(doubleSpace)
  
-#WAP in which escape sequences are being used.
+# #WAP in which escape sequences are being used.
 
-a = "Dear Ishan, You're not Noice! Thanks"
-print(a)
+# a = "Dear Ishan, You're not Noice! Thanks"
+# print(a)
 
-formattedLetter = "Dear Ishan,\n\t You're not Noice!\n Thanks"
-print(formattedLetter)
+# formattedLetter = "Dear Ishan,\n\t You're not Noice!\n Thanks"
+# print(formattedLetter)
+
+
+#LISTS AND TUPLES
+
+'''Lists are the collection of data and it is initialized by the square bracket [], lists are in ordered form.
+The data inside the lists can be of any datatype for eg:'''
+# list1 = [25,"Ishan Raj",False]
+
+# print(list1[0])
+
+# #IN lists we can update the values in list
+# list1[0] = 191325
+# print(list1)
+
+# #LIST SLICING 
+# #list slicing is the same as the string slicing
+# friends = ["Ishan","Sudip","Unique",45,5,56]
+# print(friends[-4:-1])
+
+#LIST METHODS
+# the list methods changes the root value unlike the string functions
+# list1 = [1,4,5,2,7]
+# list1.sort() #--> this sorts the list in ascending order
+# list1.reverse() #--> this reverses the order of the list
+# list1.append(8) #this inserts the given value i.e 8 at the end of the list
+# list1.insert(2,30) #in this, the first value i.e 2 is the index of the list and second value i.e 30 is the value to be inserted
+# list1.pop(2) #this method pops the value at the index 2, this works with the index
+# list1.remove(7)  #this removes the value 7 from the list 
+# print(list1)
+
+
+#TUPLES
+
+# A tuple is the collection of data like lists but it is initialized with small bracket () and unlike lists it cannot update or override the given value but like lists it can store any type of datatype inside of it.
+#tuple is given below:
+
+t1 = (1,2,3,10,3)
+print(t1)
+
+#in the case of tuple we cannnot provide only one element like the example given below:
+t1 = (1) #it reads the given expression as the value of a variable but not a tuple so when we'll have to give the single element tuple we would have to do the following.
+
+t1 = (1,)
+
+#TUPLE METHODS
+
+t=(1,2,3,1,2,6,4,3)
+
+print(t.count(1))   #gives the count of the given value i.e 1 in the tuple
+print(t.index(3))   #gives the index of the value given i.e 3 in the tuple
