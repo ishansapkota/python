@@ -14,6 +14,7 @@ import os
 # print(os.getcwd()
 
 import os
+from pyclbr import Function
 
 # a = input("Enter the number: ") this is how you take inputs in python
 
@@ -156,3 +157,8 @@ t=(1,2,3,1,2,6,4,3)
 
 print(t.count(1))   #gives the count of the given value i.e 1 in the tuple
 print(t.index(3))   #gives the index of the value given i.e 3 in the tuple
+
+# Function
+
+def Hello(): #function is defined in this way 
+    print("Hello")
