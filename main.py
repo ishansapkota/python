@@ -137,7 +137,7 @@ The data inside the lists can be of any datatype for eg:'''
 # list1.remove(7)  #this removes the value 7 from the list 
 # print(list1)
 
-
+'''
 #TUPLES
 
 # A tuple is the collection of data like lists but it is initialized with small bracket () and unlike lists it cannot update or override the given value but like lists it can store any type of datatype inside of it.
@@ -162,3 +162,35 @@ print(t.index(3))   #gives the index of the value given i.e 3 in the tuple
 
 def Hello(): #function is defined in this way 
     print("Hello")
+    '''
+
+# import mysql.connector as c
+
+# conn = c.connect(host = "localhost", user = "ishanraj", passwd = "9860479562", database = "example1" )
+
+# cursor = conn.cursor()
+# name = input("Enter the name of the student:")
+# roll = int(input("Enter the roll number of the student:"))
+
+# query = "insert into example1 values ('{}',{})".format(name,roll)
+
+# cursor.execute(query)
+# conn.commit()
+
+# print("data inserted.")
+
+import MySQLdb
+
+db = MySQLdb.connect(host = "localhost", user = "root", passwd="",database= "vault")
+
+inputrec = db.cursor()
+query = "insert into employee values(9,'Fernando','Analyst','Spain','Madrid',10000)"
+
+inputrec.execute(query)
+db.commit()
+print("Task successful")
+db.close
+
+
+
+
